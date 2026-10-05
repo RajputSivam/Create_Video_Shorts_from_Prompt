@@ -1,0 +1,28 @@
+server:
+  host: 127.0.0.1
+  port: 8000
+models:
+  ollama_url: http://127.0.0.1:11434
+  llm: qwen2.5:7b
+  image: stabilityai/sdxl-turbo
+  image_steps: 4
+  image_guidance: 0.0
+  whisper: base
+paths:
+  jobs: ./jobs
+  outputs: ./outputs
+  cache: ./cache
+  music: ./assets/music
+  sfx: ./assets/sfx
+  fonts: ./assets/fonts
+  voices: ./models/voices
+video:
+  fps: 30
+  short_width: 1080
+  short_height: 1920
+  long_width: 1920
+  long_height: 1080
+  subtitle_font_size_short: 82
+  subtitle_font_size_long: 52
+  max_cache_gb: 20
+  max_file_size_bytes: 2000000000

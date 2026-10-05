@@ -1,0 +1,33 @@
+{
+  "name": "prompt-to-video",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "concurrently -k \"npm:dev:web\" \"npm:dev:api\"",
+    "dev:web": "vite --host 0.0.0.0",
+    "dev:api": "node backend/server.js",
+    "doctor": "node backend/server.js doctor",
+    "test:backend": ".venv\\Scripts\\python.exe -m unittest discover -s backend/tests -v",
+    "test:api": "node --test backend/tests/server.test.js",
+    "test:providers": "python -m backend.test_providers",
+    "test:images": "python -m backend.test_images",
+    "build": "vite build",
+    "preview": "vite preview --host 0.0.0.0"
+  },
+  "dependencies": {
+    "dotenv": "^18.0.5",
+    "express": "^5.2.1",
+    "lucide-react": "^0.468.0",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "yaml": "^2.9.1"
+  },
+  "devDependencies": {
+    "@tailwindcss/vite": "^4.3.3",
+    "@vitejs/plugin-react": "^4.3.4",
+    "concurrently": "^9.1.2",
+    "tailwindcss": "^4.3.3",
+    "vite": "^6.0.5"
+  }
+}

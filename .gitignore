@@ -1,0 +1,17 @@
+node_modules/
+dist/
+__pycache__/
+*.py[cod]
+.venv/
+.env
+data/
+backend/data/
+outputs/
+jobs/
+cache/
+models/
+assets/music/generated/
+assets/sfx/generated/
+logs/
+*.db
+*.partialTEMP_MPY_wvf_snd.mp4
